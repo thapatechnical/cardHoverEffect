@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #74b9ff;
+  background-color: #bed1fd;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: white;
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.face1 {
+  padding: 20px;
+  background-color: white;
+  color: #073668;
+}
+
+.face2 {
+  background-color: #073668;
+  transition: 0.5s;
+}
+
+.card:hover .face2 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: 2px solid #073668;
+}
+
+.card:hover .face2 h2 {
+  color: #073668;
+  font-size: 32px;
+}
+
+.face1 h2 {
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+.face1 p {
+  text-align: center;
+}
+
+.face1 a {
+  margin-top: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #073668;
+  border: 2px solid #073668;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.face2 h2 {
+  font-size: 120px;
+  color: white;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: #073668;
+  color: white;
+}
